@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Healthy Treats</title>
+</head>
+<body style="margin:0;padding:0;background:#d9f15c;font-family:Arial,Helvetica,sans-serif;">
+
+  <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="20" cellspacing="0" style="background:#d9f15c;">
+          
+          <!-- Logo -->
+          <tr>
+            <td align="center">
+              <img src="https://yourdomain.com/static/logo.png"
+                   alt="Healthy Treats"
+                   width="120" />
+            </td>
+          </tr>
+
+          <!-- Heading -->
+          <tr>
+            <td align="center">
+              <h2 style="color:#000;margin-bottom:10px;">
+                Welcome to HarvestBites Family - A Dry Fruits Love
+              </h2>
+            </td>
+          </tr>
+
+          <!-- Content -->
+          <tr>
+            <td style="color:#000;font-size:14px;line-height:1.6;">
+              <p>Hi <strong>{{ username }}</strong>,</p>
+
+              <p>
+                Thanks for creating an account on HarvestBites - A Dry Fruits Love.
+                Here’s a copy of your user details.
+              </p>
+
+              <hr>
+
+              <p><strong>Username:</strong> {{ username }}</p>
+
+              <p>
+                <a href="{{ reset_link }}"
+                   style="color:#000;font-weight:bold;text-decoration:underline;">
+                  Set your new password
+                </a>
+              </p>
+
+              <hr>
+
+              <p>
+                You can access your account area to view orders, change your password,
+                and more via the link below:
+              </p>
+
+              <p>
+                <a href="{{ account_link }}"
+                   style="color:#000;font-weight:bold;text-decoration:underline;">
+                  My account
+                </a>
+              </p>
+
+              <p>We look forward to seeing you soon.</p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="font-size:11px;color:#333;">
+              <p>HarvestBites – A Dry Fruits Love</p>
+              <p>No: 4/1 First Floor, Srivari Towers, 2nd Cross, Hosur, Krishnagiri Dt, Tamilnadu - 635109</p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
