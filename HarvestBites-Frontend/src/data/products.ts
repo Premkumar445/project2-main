@@ -1,10 +1,10 @@
 import type { Product } from "../types/product";
 
 // Single pack main images (cards)
-import ragiDelight from "@/assets/products/ragi-delight.png";
-import jowarClassic from "@/assets/products/jowar-classic.png";
-import bajraPower from "@/assets/products/bajra-power.png";
-import multiMilletHarmony from "@/assets/products/multi-millet-harmony.png";
+import ProductImg11 from "@/assets/products/ProductImg11.png";
+import ProductImg22 from "@/assets/products/ProductImg22.png";
+import ProductImg33 from "@/assets/products/ProductImg33.png";
+import ProductImg44 from "@/assets/products/ProductImg44.png";
 import foxtailBalance from "@/assets/products/foxtail-balance.png";
 import littleMilletJoy from "@/assets/products/little-millet-joy.png";
 
@@ -40,51 +40,30 @@ import little3 from "@/assets/products/little-3.png";
 import little4 from "@/assets/products/little-4.png";
 
 // Combo pack main images
-import kidsStrengthComboImg from "@/assets/combos/kids-strength.png";
-import digestiveCareComboImg from "@/assets/combos/digestive-care.png";
-import familyValueComboImg from "@/assets/combos/family-value.png";
-import sugarBalanceComboImg from "@/assets/combos/sugar-balance.png";
-import heartEnergyComboImg from "@/assets/combos/heart-energy.png";
+import ComboImg from "@/assets/combos/ComboImg.png";
+
 
 // Combo gallery images (create these files as needed)
-import kidsStrength1 from "@/assets/combos/kids-strength-1.png";
-import kidsStrength2 from "@/assets/combos/kids-strength-2.png";
-import kidsStrength3 from "@/assets/combos/kids-strength-3.png";
-import kidsStrength4 from "@/assets/combos/kids-strength-4.png";
+import Combo1 from "@/assets/combos/Combo1.png";
+import Combo2 from "@/assets/combos/Combo2.png";
+import Combo3 from "@/assets/combos/Combo3.png";
+import Combo4 from "@/assets/combos/Combo4.png";
 
-import digestive1 from "@/assets/combos/digestive-1.png";
-import digestive2 from "@/assets/combos/digestive-2.png";
-import digestive3 from "@/assets/combos/digestive-3.png";
-import digestive4 from "@/assets/combos/digestive-4.png";
 
-import family1 from "@/assets/combos/family-1.png";
-import family2 from "@/assets/combos/family-2.png";
-import family3 from "@/assets/combos/family-3.png";
-import family4 from "@/assets/combos/family-4.png";
-
-import sugar1 from "@/assets/combos/sugar-1.png";
-import sugar2 from "@/assets/combos/sugar-2.png";
-import sugar3 from "@/assets/combos/sugar-3.png";
-import sugar4 from "@/assets/combos/sugar-4.png";
-
-import heart1 from "@/assets/combos/heart-1.png";
-import heart2 from "@/assets/combos/heart-2.png";
-import heart3 from "@/assets/combos/heart-3.png";
-import heart4 from "@/assets/combos/heart-4.png";
 
 // ---------- Single products ----------
 
 export const products: Product[] = [
   {
     id: 1,
-    name: "Bone",
-    subtitle: "Finger Millet Cookies",
+    name: "Gut",
+    subtitle: "Functional Millet Cookies",
     price: 249,
     rating: 4.9,
     reviews: 128,
-    benefit: "Iron & Calcium Rich",
+    benefit: "Digestion . Microbiome . Comfort",
     description:
-      "Perfect for growing children and adults seeking bone health support.",
+      "Good for health",
     tags: ["Kids Favorite", "High Calcium"],
     ingredients: [
       "Organic Ragi (Finger Millet) Flour",
@@ -104,13 +83,13 @@ export const products: Product[] = [
     mrp: 299,
     discount: 17,
     premiumPrice: 239,
-    image: ragiDelight,
+    image: ProductImg11,
     images: [ragi1, ragi2, ragi3, ragi4],
   },
   {
     id: 2,
     name: "Brain",
-    subtitle: "Sorghum Millet Cookies",
+    subtitle: "Functional Millet Cookies",
     price: 229,
     rating: 4.8,
     reviews: 96,
@@ -136,13 +115,13 @@ export const products: Product[] = [
     mrp: 279,
     discount: 18,
     premiumPrice: 219,
-    image: jowarClassic,
+    image: ProductImg22,
     images: [jowar1, jowar2, jowar3, jowar4],
   },
   {
     id: 3,
-    name: "Gut",
-    subtitle: "Pearl Millet Cookies",
+    name: "Heart",
+    subtitle: "Functional Millet Cookies",
     price: 259,
     rating: 4.7,
     reviews: 84,
@@ -168,13 +147,13 @@ export const products: Product[] = [
     mrp: 309,
     discount: 16,
     premiumPrice: 245,
-    image: bajraPower,
+    image: ProductImg33,
     images: [bajra1, bajra2, bajra3, bajra4],
   },
   {
     id: 4,
-    name: "Heart",
-    subtitle: "5-Grain Blend Cookies",
+    name: "Born Density",
+    subtitle: "Functional Millet Cookies",
     price: 299,
     rating: 4.9,
     reviews: 156,
@@ -200,13 +179,13 @@ export const products: Product[] = [
     mrp: 349,
     discount: 14,
     premiumPrice: 279,
-    image: multiMilletHarmony,
+    image: ProductImg44,
     images: [multi1, multi2, multi3, multi4],
   },
   {
     id: 5,
-    name: "Pocd",
-    subtitle: "Kangni Millet Cookies",
+    name: "Pocd / Pcos",
+    subtitle: "Functional Millet Cookies",
     price: 269,
     rating: 4.8,
     reviews: 72,
@@ -238,7 +217,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: "Little Millet Joy",
-    subtitle: "Kutki Millet Cookies",
+    subtitle: "Functional Millet Cookies",
     price: 239,
     rating: 4.6,
     reviews: 64,
@@ -275,62 +254,14 @@ export const comboPacks: Product[] = [
   {
     ...products[1],
     id: 101,
-    name: "Kids Strength Combo",
-    subtitle: "Ragi Delight + Jowar Classic",
-    price: 449,
+    name: "All-in-One Wellness Combo",
+    subtitle: "All your wellness needs in one pack",
+    price: 999,
     mrp: 528,
     discount: 15,
     premiumPrice: 429,
-    image: kidsStrengthComboImg,
-    images: [kidsStrength1, kidsStrength2, kidsStrength3, kidsStrength4],
-  },
-  {
-    ...products[2],
-    id: 102,
-    name: "Digestive Care Combo",
-    subtitle: "Bajra Power + Little Millet Joy",
-    price: 479,
-    mrp: 498,
-    discount: 4,
-    premiumPrice: 459,
-    image: digestiveCareComboImg,
-    images: [digestive1, digestive2, digestive3, digestive4],
-  },
-  {
-    ...products[3],
-    id: 103,
-    name: "Family Value Pack",
-    subtitle: "Multi‑Millet Harmony x 2",
-    price: 569,
-    mrp: 598,
-    discount: 5,
-    premiumPrice: 549,
-    image: familyValueComboImg,
-    images: [family1, family2, family3, family4],
-  },
-  {
-    ...products[4],
-    id: 104,
-    name: "Sugar Balance Combo",
-    subtitle: "Foxtail Balance x 2",
-    price: 509,
-    mrp: 538,
-    discount: 5,
-    premiumPrice: 489,
-    image: sugarBalanceComboImg,
-    images: [sugar1, sugar2, sugar3, sugar4],
-  },
-  {
-    ...products[5],
-    id: 105,
-    name: "Heart & Energy Combo",
-    subtitle: "Jowar Classic + Bajra Power",
-    price: 469,
-    mrp: 488,
-    discount: 4,
-    premiumPrice: 449,
-    image: heartEnergyComboImg,
-    images: [heart1, heart2, heart3, heart4],
+    image: ComboImg,
+    images: [Combo1, Combo2, Combo3, Combo4],
   },
 ];
 

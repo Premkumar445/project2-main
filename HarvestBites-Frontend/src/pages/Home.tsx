@@ -244,7 +244,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-5">
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
-              Begin your HarvestBites routine
+              Begin ur HarvestBites routine
             </h2>
             <p className="text-sm md:text-base text-muted-foreground">
               Choose a blend that matches your family's needs and make it a

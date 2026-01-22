@@ -58,7 +58,7 @@ export default function Shop() {
                     <span className="text-xs text-muted-foreground">
                       {product.reviews} reviews
                     </span>
-                  </div>
+                  </div> <br></br>
 
                   <Link to={`/product/${product.id}`}>
                     <h3 className="text-sm font-semibold text-foreground hover:text-primary transition-colors leading-snug">
@@ -124,7 +124,7 @@ export default function Shop() {
                     <span className="text-xs text-muted-foreground">
                       {product.reviews} reviews
                     </span>
-                  </div>
+                  </div> <br></br>
 
                   <Link to={`/product/${product.id}`}>
                     <h3 className="text-sm font-semibold text-foreground hover:text-primary transition-colors leading-snug">
