@@ -17,7 +17,6 @@ class Order(models.Model):
     order_date = models.DateTimeField(default=timezone.now)
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     items_count = models.IntegerField(default=0)
-   
     payment_method = models.CharField(max_length=20, default='COD')
     is_paid = models.BooleanField(default=False)
     
